@@ -1,3 +1,14 @@
+#!/usr/bin/env node
+
+/*!
+ * NSE-API
+ * Copyright (c) 2023
+ *
+ * @author Zubin
+ * @username (GitHub) losparviero
+ * @license AGPL-3.0
+ */
+
 const { createServer } = require("@vercel/node");
 const fetch = require("node-fetch");
 const stockNSEIndia = require("stock-nse-india"); // Replace with the actual module/library name
