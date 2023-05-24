@@ -13,9 +13,9 @@ const fetchData = async (stockSymbol) => {
 
 module.exports = createServer(async (req, res) => {
   if (req.method === "GET") {
-    const stockSymbol = req.url.substring(1); // Extract the stock symbol from the URL
+    const stockSymbol = req.url.substring(1);
     if (!stockSymbol) {
-      res.status(400).json({ error: "No stock symbol provided" });
+      res.status(400).json({ error: "No stock symbol provided." });
       return;
     }
 
@@ -26,6 +26,6 @@ module.exports = createServer(async (req, res) => {
       res.status(500).json({ error: err.message });
     }
   } else {
-    res.status(405).send("Method Not Allowed");
+    res.status(405).send("Incorrect URL syntax");
   }
 });

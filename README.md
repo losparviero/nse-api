@@ -6,7 +6,7 @@ Get ticker price of any stock from NSE.
 
 ### Install
 
-
+Vercel Deploy
 
 #### Manual
 
@@ -17,7 +17,12 @@ Get ticker price of any stock from NSE.
 
 ### Methods
 
-1. 
+#### Request stock price
+
+```
+https://localhost:3000/<stock-symbol>
+Example: https://example.vercel.app/IRCTC
+```
 
 <br>
 
